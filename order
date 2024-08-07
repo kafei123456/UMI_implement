@@ -1,0 +1,4 @@
+sudo chmod -R 777 /dev/bus/usb
+python eval_real_my.py -rc example/eval_robots_config.yaml -i latest.ckpt -o data/move_cup_example
+
+python eval_real_my.py -rc example/eval_robots_config.yaml -i epoch=0270-train_loss=0.013.ckpt -o data/move_cup_example
